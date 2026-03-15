@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilly - Ein interaktiver Kinderroman</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Tilly</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#heroes">Die Helden</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#downloads">Downloads</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Besonderheiten</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#author">Autorin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <section id="home" class="banner-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <img src="images/tilly-header.png" alt="Main Header" class="main-header-image img-fluid mb-4">
+                    <img src="images/sub-header.png" alt="Sub Header" class="sub-header-image img-fluid mb-4">
+                </div>
+            </div>
+
+            <!-- Pitch Section integrated into banner -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-10">
+                    <div class="pitch-card p-4 p-md-5 shadow-lg">
+                        <h2 class="subtitle mb-4 text-center">Ein interaktiver Kinderroman zum Entdecken des kleinen Einmaleins</h2>
+                        <p class="lead text-center">
+                            Das kleine Lindenblatt <strong>Tilly</strong>, die freche Chaoszwiebel <strong>Knöllchen</strong> und der <strong>Malpunkt</strong>
+                            begeben sich auf eine aufregende Reise durch eine geheimnisvolle Welt voller Rätsel. Um die
+                            Abenteuer zu bestehen, müssen sie mathemagische Muster entdecken, Codes knacken. Ganz
+                            nebenbei lernen sie gemeinsam mit den Leser:innen die Grundlagen und Zusammenhänge des
+                            kleinen Einmaleins.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title mb-4">Video</h2>
+                    <div class="video-placeholder">
+                        <div class="ratio ratio-16x9">
+                            <!-- Vimeo Video Embed -->
+                            <!-- ANLEITUNG: Ersetzen Sie 'YOUR_VIDEO_ID' mit Ihrer tatsächlichen Vimeo Video-ID -->
+                            <!-- Die Video-ID finden Sie in der Vimeo-URL: https://vimeo.com/123456789 (hier wäre es '123456789') -->
+                            <iframe 
+                                src="https://player.vimeo.com/video/YOUR_VIDEO_ID?title=0&byline=0&portrait=0" 
+                                title="Tilly - Ein interaktiver Kinderroman"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <p class="text-muted mt-3 small">
+                        <em>Hinweis: Bitte ersetzen Sie 'YOUR_VIDEO_ID' im Code mit Ihrer Vimeo Video-ID</em>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heroes Section -->
+    <section id="heroes" class="heroes-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Die Helden</h2>
+            
+            <div class="row g-4">
+                <!-- Tilly -->
+                <div class="col-xl-4 col-lg-12">
+                    <div class="hero-card text-center h-100">
+                        <div class="hero-image-wrapper mb-3">
+                            <img src="images/tilly.png" alt="Tilly" class="hero-image img-fluid">
+                        </div>
+                        <h3 class="h4 mb-3">Tilly</h3>
+                        <p class="hero-description">
+                            Tilly ist das neugierigste Blatt am ganzen Baum und hat immer Lust, etwas Neues zu entdecken.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Knöllchen -->
+                <div class="col-xl-4 col-lg-12">
+                    <div class="hero-card text-center h-100">
+                        <div class="hero-image-wrapper mb-3">
+                            <img src="images/knoellchen.png" alt="Knöllchen" class="hero-image img-fluid">
+                        </div>
+                        <h3 class="h4 mb-3">Knöllchen</h3>
+                        <p class="hero-description">
+                            Die chaotische Tulpenzwiebel Knöllchen katapultiert die Helden mit ihrer frechen Art in so 
+                            manch unvorhergesehene Situation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Malpunkt -->
+                <div class="col-xl-4 col-lg-12">
+                    <div class="hero-card text-center h-100">
+                        <div class="hero-image-wrapper mb-3">
+                            <img src="images/malpunkt.png" alt="Malpunkt" class="hero-image img-fluid">
+                        </div>
+                        <h3 class="h4 mb-3">Der Malpunkt</h3>
+                        <p class="hero-description">
+                            Der Malpunkt ist ein schelmischer Bote, der Tilly auf eine geheimnisvolle Reise schickt. Mit 
+                            seinen mathemagischen Fähigkeiten hilft er den beiden Freunden.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloads Section -->
+    <section id="downloads" class="downloads-section py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Downloads</h2>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Exposé -->
+                <div class="col-md-6">
+                    <div class="download-card text-center p-4 h-100">
+                        <img src="images/expose.png" alt="Exposé" class="download-thumbnail img-fluid mb-3">
+                        <p></p>
+                        <a href="downloads/expose.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-download me-2"></i>PDF herunterladen
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Leseprobe -->
+                <div class="col-md-6">
+                    <div class="download-card text-center p-4 h-100">
+                        <img src="images/leseprobe.png" alt="Leseprobe" class="download-thumbnail img-fluid mb-3">
+                        <p></p>
+                        <a href="downloads/leseprobe.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-download me-2"></i>PDF herunterladen
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Besonderheiten</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <img src="images/kristall.png" alt="Kristall" class="feature-icon">
+                            <span>Mathematische Muster sind Teil der Abenteuerwelt</span>
+                        </li>
+                        <li class="feature-item">
+                            <img src="images/kristall.png" alt="Kristall" class="feature-icon">
+                            <span>Protagonisten verleihen Mathematik Persönlichkeit</span>
+                        </li>
+                        <li class="feature-item">
+                            <img src="images/kristall.png" alt="Kristall" class="feature-icon">
+                            <span>Förderung mathematischer Grundkompetenzen durch Liebe, Witz und Fantasie</span>
+                        </li>
+                        <li class="feature-item">
+                            <img src="images/kristall.png" alt="Kristall" class="feature-icon">
+                            <span>Enthält ein Poster, sowie Bastel- und Spielmaterial</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Section -->
+    <section id="author" class="author-section py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Autorin und Illustratorin</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="author-card p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5 text-center text-md-start mb-4 mb-md-0">
+                                <img src="images/portrait-small.png" alt="Anne Pieser" class="author-photo">
+                            </div>
+                            <div class="col-md-5 text-center text-md-start">
+                                <h3 class="h4 mb-3">Anne Pieser</h3>
+                                <div class="contact-info">
+                                    <p class="mb-2">
+                                        <i class="bi bi-envelope-fill me-2"></i>
+                                        <a href="mailto:anne.pieser@gmail.com">anne.pieser@gmail.com</a>
+                                    </p>
+                                    <p class="mb-0">
+                                        <i class="bi bi-telephone-fill me-2"></i>
+                                        <a href="tel:+491747157599">0174 7157599</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-dark text-light">
+        <div class="container text-center">
+            <p class="mb-0">
+                Anne Pieser | Teltower Damm 32 | 14169 Berlin
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
