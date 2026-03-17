@@ -89,21 +89,23 @@
                     <h2 class="section-title mb-4">Video</h2>
                     <div class="video-placeholder video-portrait mx-auto">
                         <div class="ratio ratio-9x16">
-                            <!-- Vimeo Video Embed -->
-                            <!-- ANLEITUNG: Ersetzen Sie 'YOUR_VIDEO_ID' mit Ihrer tatsächlichen Vimeo Video-ID -->
-                            <!-- Die Video-ID finden Sie in der Vimeo-URL: https://vimeo.com/123456789 (hier wäre es '123456789') -->
-                            <iframe 
-                                src="https://player.vimeo.com/video/1174535362?title=0&byline=0&portrait=0" 
-                                title="Tilly - Ein mathemagisches Abenteuer"
-                                frameborder="0"
-                                allow="autoplay; fullscreen; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
+                            <!-- Vimeo Video Embed with Cookie Consent -->
+                            <div id="vimeo-consent" class="video-consent">
+                                <div class="video-consent-content">
+                                    <i class="bi bi-play-circle fs-1 mb-3"></i>
+                                    <p class="mb-2"><strong>Externer Inhalt</strong></p>
+                                    <p class="small mb-3">Mit dem Laden des Videos akzeptieren Sie die <a href="https://vimeo.com/privacy" target="_blank" rel="noopener noreferrer">Datenschutzerklärung</a> von Vimeo. Es werden Cookies gesetzt.</p>
+                                    <button id="vimeo-consent-btn" class="btn btn-primary btn-sm">
+                                        <i class="bi bi-play-fill me-1"></i>Video laden
+                                    </button>
+                                    <div class="form-check mt-2">
+                                        <input class="form-check-input" type="checkbox" id="vimeo-remember">
+                                        <label class="form-check-label small" for="vimeo-remember">Auswahl merken</label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!--<p class="text-muted mt-3 small">
-                        <em>Hinweis: Bitte ersetzen Sie 'YOUR_VIDEO_ID' im Code mit Ihrer Vimeo Video-ID</em>
-                    </p>-->
                 </div>
             </div>
         </div>
@@ -264,5 +266,36 @@
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Vimeo Cookie Consent -->
+    <script>
+    (function() {
+        var videoUrl = 'https://player.vimeo.com/video/1174535362?title=0&byline=0&portrait=0';
+        var consentEl = document.getElementById('vimeo-consent');
+        var btn = document.getElementById('vimeo-consent-btn');
+        var remember = document.getElementById('vimeo-remember');
+
+        function loadVideo() {
+            var iframe = document.createElement('iframe');
+            iframe.src = videoUrl;
+            iframe.title = 'Tilly - Ein mathemagisches Abenteuer';
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture');
+            iframe.setAttribute('allowfullscreen', '');
+            consentEl.parentNode.replaceChild(iframe, consentEl);
+        }
+
+        if (localStorage.getItem('vimeo-consent') === 'granted') {
+            loadVideo();
+        } else {
+            btn.addEventListener('click', function() {
+                if (remember.checked) {
+                    localStorage.setItem('vimeo-consent', 'granted');
+                }
+                loadVideo();
+            });
+        }
+    })();
+    </script>
 </body>
 </html>
