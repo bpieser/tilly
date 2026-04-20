@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=2.0">
 </head>
 <body>
     <!-- Navigation -->
@@ -59,21 +59,33 @@
                         <a class="nav-link" href="#home">Start</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#heroes">Die Helden</a>
+                        <a class="nav-link" href="#preview">Vorschau</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#downloads">Downloads</a>
+                        <a class="nav-link" href="#heroes">Die Helden</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#features">Besonderheiten</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#video">Video</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#author">Autorin</a>
                     </li>
                 </ul>
+                <div class="d-flex align-items-center ms-3 gap-2">
+                    <a href="https://www.instagram.com/anne_pieser/" target="_blank" rel="noopener noreferrer" class="navbar-social-link" aria-label="Instagram">
+                        <i class="bi bi-instagram fs-5"></i>
+                    </a>
+                    <a href="https://imlindenbaum.blogspot.com/" target="_blank" rel="noopener noreferrer" class="navbar-social-link" aria-label="Blogger">
+                        <i class="bi bi-rss-fill fs-5"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
+
 
     <!-- Banner Section -->
     <section id="home" class="banner-section">
@@ -81,7 +93,7 @@
             <div class="row align-items-center">
                 <div class="col-12 text-center">
                     <img src="images/tilly-header.png" alt="Main Header" class="main-header-image img-fluid mb-4">
-                    <img src="images/sub-header.png" alt="Sub Header" class="sub-header-image img-fluid mb-4">
+                    <h2>Ein mathemagisches Abenteuer</h2>
                 </div>
             </div>
 
@@ -89,42 +101,23 @@
             <div class="row justify-content-center mt-5">
                 <div class="col-lg-10">
                     <div class="pitch-card p-4 p-md-5 shadow-lg">
-                        <h2 class="subtitle mb-4 text-center">Ein interaktiver Kinderroman zum Entdecken des kleinen Einmaleins</h2>
-                        <p class="lead text-center">
-                            Das kleine Lindenblatt <strong>Tilly</strong>, die freche Chaoszwiebel <strong>Knöllchen</strong> und der <strong>Malpunkt</strong>
-                            begeben sich auf eine aufregende Reise durch eine geheimnisvolle Welt voller Rätsel. Um die
-                            Abenteuer zu bestehen, müssen sie mathemagische Muster entdecken und Codes knacken. Ganz
-                            nebenbei lernen sie gemeinsam mit den Leser:innen die Grundlagen und Zusammenhänge des
-                            kleinen Einmaleins.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video Section -->
-    <section class="video-section py-5 bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="section-title mb-4">Video</h2>
-                    <div class="video-placeholder video-portrait mx-auto">
-                        <div class="ratio ratio-9x16">
-                            <!-- Vimeo Video Embed with Cookie Consent -->
-                            <div id="vimeo-consent" class="video-consent">
-                                <div class="video-consent-content">
-                                    <i class="bi bi-play-circle fs-1 mb-3"></i>
-                                    <p class="mb-2"><strong>Externer Inhalt</strong></p>
-                                    <p class="small mb-3">Mit dem Laden des Videos akzeptieren Sie die <a href="https://vimeo.com/privacy" target="_blank" rel="noopener noreferrer">Datenschutzerklärung</a> von Vimeo. Es werden Cookies gesetzt.</p>
-                                    <button id="vimeo-consent-btn" class="btn btn-primary btn-sm">
-                                        <i class="bi bi-play-fill me-1"></i>Video laden
-                                    </button>
-                                    <div class="form-check mt-2">
-                                        <input class="form-check-input" type="checkbox" id="vimeo-remember">
-                                        <label class="form-check-label small" for="vimeo-remember">Auswahl merken</label>
-                                    </div>
+                        <div class="row align-items-center">
+                            <div class="col-9">
+                                <h2 class="subtitle mb-4 text-center">DAS Mathekonzept für Kinder mit:</h2>
+                                <div class="d-flex align-items-center justify-content-center gap-4">
+                                    <!-- List of benefits -->
+                                    <ul class="benefits-list">
+                                        <li>Matheängsten</li>
+                                        <li>Lernblockaden</li>
+                                        <li>Motivationsproblemen</li>
+                                    </ul>
                                 </div>
+                                <p class="hero-description">
+                                    Als interaktiver Kinderroman zum Entdecken des kleinen Einmaleins.
+                                </p>
+                            </div>
+                            <div class="col-3 text-center">
+                                <img src="images/halmut.png" alt="Halmut" class="img-fluid halmut-image">
                             </div>
                         </div>
                     </div>
@@ -133,11 +126,94 @@
         </div>
     </section>
 
+
+    <!-- Preview Section -->
+    <section id="preview" class="preview-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Neugierig geworden</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8">
+                    <p class="preview-p">Blick ins Buch</p>
+                    <div id="previewCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#previewCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#previewCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#previewCarousel" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#previewCarousel" data-bs-slide-to="3"></button>
+                            <button type="button" data-bs-target="#previewCarousel" data-bs-slide-to="4"></button>
+                            <button type="button" data-bs-target="#previewCarousel" data-bs-slide-to="5"></button>
+                            <button type="button" data-bs-target="#previewCarousel" data-bs-slide-to="6"></button>
+                            <button type="button" data-bs-target="#previewCarousel" data-bs-slide-to="7"></button>
+                            <button type="button" data-bs-target="#previewCarousel" data-bs-slide-to="8"></button>
+                            <button type="button" data-bs-target="#previewCarousel" data-bs-slide-to="9"></button>
+                            <button type="button" data-bs-target="#previewCarousel" data-bs-slide-to="10"></button>
+                            <button type="button" data-bs-target="#previewCarousel" data-bs-slide-to="11"></button>
+                            <button type="button" data-bs-target="#previewCarousel" data-bs-slide-to="12"></button>
+                        </div>
+                        <div class="carousel-inner rounded shadow">
+                            <div class="carousel-item active">
+                                <img src="images/preview/001.jpg" class="d-block w-100" alt="Vorschau 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/preview/002.jpg" class="d-block w-100" alt="Vorschau 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/preview/003.jpg" class="d-block w-100" alt="Vorschau 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/preview/102.jpg" class="d-block w-100" alt="Vorschau 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/preview/109.jpg" class="d-block w-100" alt="Vorschau 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/preview/118.jpg" class="d-block w-100" alt="Vorschau 6">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/preview/135.jpg" class="d-block w-100" alt="Vorschau 7">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/preview/14.jpg" class="d-block w-100" alt="Vorschau 8">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/preview/15.jpg" class="d-block w-100" alt="Vorschau 9">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/preview/37.jpg" class="d-block w-100" alt="Vorschau 10">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/preview/58.jpg" class="d-block w-100" alt="Vorschau 11">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/preview/66.jpg" class="d-block w-100" alt="Vorschau 12">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/preview/89.jpg" class="d-block w-100" alt="Vorschau 13">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#previewCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="visually-hidden">Zurück</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#previewCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="visually-hidden">Weiter</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-start justify-content-center mt-4 mt-lg-0">
+                    <img src="images/erscheinungsdatum.png" alt="Erscheinungsdatum" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Heroes Section -->
     <section id="heroes" class="heroes-section py-5">
         <div class="container">
             <h2 class="section-title text-center mb-5">Die Helden</h2>
-            
+
             <div class="row g-4">
                 <!-- Tilly -->
                 <div class="col-xl-4 col-lg-12">
@@ -160,7 +236,7 @@
                         </div>
                         <h3 class="h4 mb-3">Knöllchen</h3>
                         <p class="hero-description">
-                            Die chaotische Tulpenzwiebel Knöllchen katapultiert die Helden mit ihrer frechen Art in so 
+                            Die chaotische Tulpenzwiebel Knöllchen katapultiert die Helden mit ihrer frechen Art in so
                             manch unvorhergesehene Situation.
                         </p>
                     </div>
@@ -174,7 +250,7 @@
                         </div>
                         <h3 class="h4 mb-3">Der Malpunkt</h3>
                         <p class="hero-description">
-                            Der Malpunkt ist ein schelmischer Bote, der Tilly auf eine geheimnisvolle Reise schickt. Mit 
+                            Der Malpunkt ist ein schelmischer Bote, der Tilly auf eine geheimnisvolle Reise schickt. Mit
                             seinen mathemagischen Fähigkeiten hilft er den beiden Freunden.
                         </p>
                     </div>
@@ -183,42 +259,13 @@
         </div>
     </section>
 
-    <!-- Downloads Section -->
-    <section id="downloads" class="downloads-section py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Downloads</h2>
-            
-            <div class="row g-4 justify-content-center">
-                <!-- Exposé -->
-                <div class="col-md-6">
-                    <div class="download-card text-center p-4 h-100">
-                        <img src="images/expose.png" alt="Exposé" class="download-thumbnail img-fluid mb-3">
-                        <p></p>
-                        <a href="downloads/expose.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                            <i class="bi bi-download me-2"></i>PDF herunterladen
-                        </a>
-                    </div>
-                </div>
 
-                <!-- Leseprobe -->
-                <div class="col-md-6">
-                    <div class="download-card text-center p-4 h-100">
-                        <img src="images/leseprobe.png" alt="Leseprobe" class="download-thumbnail img-fluid mb-3">
-                        <p></p>
-                        <a href="downloads/leseprobe.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                            <i class="bi bi-download me-2"></i>PDF herunterladen
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Features Section -->
     <section id="features" class="features-section py-5">
         <div class="container">
             <h2 class="section-title text-center mb-5">Besonderheiten</h2>
-            
+
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <ul class="features-list">
@@ -242,13 +289,44 @@
                 </div>
             </div>
         </div>
+
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="video-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Du willst noch mehr?</h2>
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="video-placeholder video-portrait mx-auto">
+                        <div class="ratio ratio-9x16">
+                            <div id="vimeo-consent-author" class="video-consent">
+                                <div class="video-consent-content">
+                                    <i class="bi bi-play-circle fs-1 mb-3"></i>
+                                    <p class="mb-2"><strong>Externer Inhalt</strong></p>
+                                    <p class="small mb-3">Mit dem Laden des Videos akzeptieren Sie die <a href="https://vimeo.com/privacy" target="_blank" rel="noopener noreferrer">Datenschutzerklärung</a> von Vimeo. Es werden Cookies gesetzt.</p>
+                                    <button id="vimeo-consent-btn-author" class="btn btn-primary btn-sm">
+                                        <i class="bi bi-play-fill me-1"></i>Video laden
+                                    </button>
+                                    <div class="form-check mt-2">
+                                        <input class="form-check-input" type="checkbox" id="vimeo-remember-author">
+                                        <label class="form-check-label small" for="vimeo-remember-author">Auswahl merken</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Author Section -->
     <section id="author" class="author-section py-5 bg-light">
         <div class="container">
             <h2 class="section-title text-center mb-5">Autorin und Illustratorin</h2>
-            
+
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="author-card p-4">
@@ -264,9 +342,17 @@
                                         <i class="bi bi-envelope-fill me-2"></i>
                                         <a href="mailto:anne.pieser@gmail.com">anne.pieser@gmail.com</a>
                                     </p>
-                                    <p class="mb-0">
+                                    <p class="mb-2">
                                         <i class="bi bi-telephone-fill me-2"></i>
                                         <a href="tel:+491747157599">0174 7157599</a>
+                                    </p>
+                                    <p class="mb-2">
+                                        <i class="bi bi-instagram me-2"></i>
+                                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                                    </p>
+                                    <p class="mb-0">
+                                        <i class="bi bi-rss-fill me-2"></i>
+                                        <a href="https://www.blogger.com/" target="_blank" rel="noopener noreferrer">Blogger</a>
                                     </p>
                                 </div>
                             </div>
@@ -274,6 +360,8 @@
                     </div>
                 </div>
             </div>
+
+
         </div>
     </section>
 
@@ -291,33 +379,62 @@
 
     <!-- Vimeo Cookie Consent -->
     <script>
-    (function() {
-        var videoUrl = 'https://player.vimeo.com/video/1174535362?title=0&byline=0&portrait=0';
-        var consentEl = document.getElementById('vimeo-consent');
-        var btn = document.getElementById('vimeo-consent-btn');
-        var remember = document.getElementById('vimeo-remember');
+        (function () {
+            var videoUrl = 'https://player.vimeo.com/video/1174535362?title=0&byline=0&portrait=0';
+            var consentEl = document.getElementById('vimeo-consent');
+            var btn = document.getElementById('vimeo-consent-btn');
+            var remember = document.getElementById('vimeo-remember');
 
-        function loadVideo() {
-            var iframe = document.createElement('iframe');
-            iframe.src = videoUrl;
-            iframe.title = 'Tilly - Ein mathemagisches Abenteuer';
-            iframe.setAttribute('frameborder', '0');
-            iframe.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture');
-            iframe.setAttribute('allowfullscreen', '');
-            consentEl.parentNode.replaceChild(iframe, consentEl);
-        }
+            function loadVideo() {
+                var iframe = document.createElement('iframe');
+                iframe.src = videoUrl;
+                iframe.title = 'Tilly - Ein mathemagisches Abenteuer';
+                iframe.setAttribute('frameborder', '0');
+                iframe.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture');
+                iframe.setAttribute('allowfullscreen', '');
+                consentEl.parentNode.replaceChild(iframe, consentEl);
+            }
 
-        if (localStorage.getItem('vimeo-consent') === 'granted') {
-            loadVideo();
-        } else {
-            btn.addEventListener('click', function() {
-                if (remember.checked) {
-                    localStorage.setItem('vimeo-consent', 'granted');
-                }
+            if (localStorage.getItem('vimeo-consent') === 'granted') {
                 loadVideo();
-            });
-        }
-    })();
+            } else {
+                btn.addEventListener('click', function () {
+                    if (remember.checked) {
+                        localStorage.setItem('vimeo-consent', 'granted');
+                    }
+                    loadVideo();
+                });
+            }
+        })();
+
+        // Vimeo – Author Section
+        (function () {
+            var videoUrl = 'https://player.vimeo.com/video/1174535362?title=0&byline=0&portrait=0';
+            var consentEl = document.getElementById('vimeo-consent-author');
+            var btn = document.getElementById('vimeo-consent-btn-author');
+            var remember = document.getElementById('vimeo-remember-author');
+
+            function loadVideo() {
+                var iframe = document.createElement('iframe');
+                iframe.src = videoUrl;
+                iframe.title = 'Tilly - Ein mathemagisches Abenteuer';
+                iframe.setAttribute('frameborder', '0');
+                iframe.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture');
+                iframe.setAttribute('allowfullscreen', '');
+                consentEl.parentNode.replaceChild(iframe, consentEl);
+            }
+
+            if (localStorage.getItem('vimeo-consent') === 'granted') {
+                loadVideo();
+            } else {
+                btn.addEventListener('click', function () {
+                    if (remember.checked) {
+                        localStorage.setItem('vimeo-consent', 'granted');
+                    }
+                    loadVideo();
+                });
+            }
+        })();
     </script>
 </body>
 </html>

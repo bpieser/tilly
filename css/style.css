@@ -7,7 +7,9 @@
     --accent-color: #FFC107;
     --text-dark: #333;
     --text-light: #666;
-    --bg-light: #f8f9fa;
+    --bg-white: #ffffff;
+    --bg-soft: #F1F8E9;
+    --bg-medium: #DCEDC8;
 }
 
 * {
@@ -55,18 +57,27 @@ html {
     color: var(--primary-color) !important;
 }
 
+.navbar-social-link {
+    color: var(--text-dark);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-social-link:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
+}
+
 /* =============================================
    Banner Section
    ============================================= */
 .banner-section {
     padding-top: 180px;
     padding-bottom: 80px;
-    background-image: url('../images/header-banner.png');
-    background-size: 50%;
-    background-position: left 80px;
-    background-repeat: no-repeat;
+    background-image: url('../images/header-banner-middle.png'), url('../images/header-banner.png');
+    background-size: 50%, 50%;
+    background-position: center 80px, left 80px;
+    background-repeat: repeat-x, no-repeat;
     position: relative;
-    min-height: 600px;
 }
 
 .banner-section::before {
@@ -154,7 +165,7 @@ html {
    Video Section
    ============================================= */
 .video-section {
-    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+    background: var(--bg-warm);
 }
 
 .video-placeholder {
@@ -223,7 +234,7 @@ html {
    Heroes Section
    ============================================= */
 .heroes-section {
-    background-color: white;
+    background: var(--bg-white);
 }
 
 .hero-card {
@@ -262,6 +273,41 @@ html {
 }
 
 /* =============================================
+   Preview Section
+   ============================================= */
+.preview-section {
+    background: var(--bg-soft);
+}
+
+.preview-p {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    font-weight: 500;
+    padding: 4px 0;
+}
+
+.preview-section .carousel-item img {
+    object-fit: contain;
+    max-height: 748px;
+    background: #fff;
+}
+
+.preview-section .carousel-control-prev-icon,
+.preview-section .carousel-control-next-icon {
+    filter: invert(1) brightness(0.3);
+}
+
+.preview-section .carousel-indicators [data-bs-target] {
+    background-color: #555;
+    opacity: 0.6;
+}
+
+.preview-section .carousel-indicators .active {
+    background-color: #222;
+    opacity: 1;
+}
+
+/* =============================================
    Downloads Section
    ============================================= */
 .download-card {
@@ -296,10 +342,37 @@ html {
 }
 
 /* =============================================
+   Benefits List (Pitch Card)
+   ============================================= */
+.halmut-image {
+    max-height: 250px;
+    width: auto;
+}
+
+.benefits-list {
+    list-style: disc;
+    display: inline-block;
+    text-align: left;
+    padding-left: 1.5rem;
+    margin: 0 auto;
+}
+
+.pitch-card {
+    text-align: center;
+}
+
+.benefits-list li {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    font-weight: 500;
+    padding: 4px 0;
+}
+
+/* =============================================
    Features Section
    ============================================= */
 .features-section {
-    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+    background: linear-gradient(160deg, var(--bg-soft) 0%, var(--bg-medium) 100%);
 }
 
 .features-list {
@@ -338,6 +411,14 @@ html {
 /* =============================================
    Author Section
    ============================================= */
+.downloads-section {
+    background: var(--bg-warm) !important;
+}
+
+.author-section {
+    background: var(--bg-soft) !important;
+}
+
 .author-card {
     background: white;
     border-radius: 20px;
