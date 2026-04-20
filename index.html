@@ -386,6 +386,7 @@
             var remember = document.getElementById('vimeo-remember');
 
             function loadVideo() {
+                if (!consentEl) return;
                 var iframe = document.createElement('iframe');
                 iframe.src = videoUrl;
                 iframe.title = 'Tilly - Ein mathemagisches Abenteuer';
@@ -397,9 +398,9 @@
 
             if (localStorage.getItem('vimeo-consent') === 'granted') {
                 loadVideo();
-            } else {
+            } else if (btn) {
                 btn.addEventListener('click', function () {
-                    if (remember.checked) {
+                    if (remember && remember.checked) {
                         localStorage.setItem('vimeo-consent', 'granted');
                     }
                     loadVideo();
@@ -415,6 +416,7 @@
             var remember = document.getElementById('vimeo-remember-author');
 
             function loadVideo() {
+                if (!consentEl) return;
                 var iframe = document.createElement('iframe');
                 iframe.src = videoUrl;
                 iframe.title = 'Tilly - Ein mathemagisches Abenteuer';
@@ -426,9 +428,9 @@
 
             if (localStorage.getItem('vimeo-consent') === 'granted') {
                 loadVideo();
-            } else {
+            } else if (btn) {
                 btn.addEventListener('click', function () {
-                    if (remember.checked) {
+                    if (remember && remember.checked) {
                         localStorage.setItem('vimeo-consent', 'granted');
                     }
                     loadVideo();
