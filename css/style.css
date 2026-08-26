@@ -19,14 +19,14 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Caveat Brush', sans-serif;
     color: var(--text-dark);
     line-height: 1.6;
     overflow-x: hidden;
 }
 
 h1, h2, h3, h4, .navbar-brand {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Mansalva', cursive;
 }
 
 html {
@@ -39,6 +39,7 @@ html {
 .navbar {
     padding: 1rem 0;
     transition: all 0.3s ease;
+    font-size: 1.2rem;
 }
 
 .navbar-brand {
@@ -231,6 +232,13 @@ html {
 }
 
 /* =============================================
+   Jokes Section
+   ============================================= */
+.jokes-section {
+    background: var(--bg-soft);
+}
+
+/* =============================================
    Heroes Section
    ============================================= */
 .heroes-section {
@@ -269,7 +277,7 @@ html {
 
 .hero-description {
     color: var(--text-light);
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 /* =============================================
@@ -280,7 +288,7 @@ html {
 }
 
 .preview-p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--text-dark);
     font-weight: 500;
     padding: 4px 0;
@@ -362,7 +370,7 @@ html {
 }
 
 .benefits-list li {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--text-dark);
     font-weight: 500;
     padding: 4px 0;
@@ -403,7 +411,7 @@ html {
 }
 
 .feature-item span {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--text-dark);
     font-weight: 500;
 }
@@ -416,7 +424,7 @@ html {
 }
 
 .author-section {
-    background: var(--bg-soft) !important;
+    background: var(--bg-white) !important;
 }
 
 .author-card {
@@ -463,7 +471,7 @@ html {
     }
     
     .subtitle {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     
     .section-title {
@@ -471,7 +479,7 @@ html {
     }
     
     .pitch-card p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     
     .hero-image-wrapper {
@@ -490,7 +498,7 @@ html {
     }
     
     .subtitle {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     
     .feature-item {
